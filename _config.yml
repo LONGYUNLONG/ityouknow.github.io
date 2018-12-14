@@ -16,7 +16,7 @@ encoding: "utf-8"
 favicon: favicon.png 
 
 repository: ityouknow/ityouknow.github.io
-github_url: https://github.com/ityouknow
+github_url: https://github.com/longyunlong
 cnblog_url: http://www.cnblogs.com/ityouknow
 url: https://longyunlong.github.io/savesonelife/
 enforce_ssl: ityouknow.com
