@@ -6,28 +6,31 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:  拯救生命
-subtitle: 分享技术以自勉
-name: 拯救生命
-email: 275995538@qq.com
-description: 本站是拯救生命的技术分享博客。内容涵盖本人学习过程中的各种技术。
-keywords: savesonelife,拯救生命,Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,Docker,架构,大数据,编程,代码,开源,Developer,Coder,Java,
-encoding: "utf-8"
-favicon: favicon.png 
+title: Yummy Theme # ex. I m Chuan
+name: Your Name # ex. DONGChuan
+email: my_email_address@lalala.com
+location: My location # ex. Nice, France
+company: MyCompany
+company_url: my_company_website
+github_url: my_github_url # ex. https://github.com/DONGChuan
+github_username: # ex. DONGChuan
+description: description_of_your_web_site
+favicon: favicon.png # Image must be in assets/images
+repository: github_username/github_username.github.io # ex. DONGChuan/DONGChuan.github.io
 
-repository: LONGYUNLONG/savesonelife
-github_url: https://github.com/longyunlong
-url: https://longyunlong.github.io/savesonelife/
+# The base hostname & protocol for your site
+# For local test, please use http://localhost:4000
+# For production, use your github page url. ex. http://dongchuan.github.io
+url: http://localhost:4000
 
 ## Gem
-plugins:
+gems:
   - jekyll-paginate
   - jekyll-geo-pattern
   - rouge
   - kramdown
   - jekyll-github-metadata
-  - jekyll-octicons
-  
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -43,10 +46,9 @@ defaults: []
 kramdown:
   input: GFM
   enable_coderay: true
-  syntax_highlighter: rouge
 
-syntax_highlighter_opts:
-   coderay_line_numbers:  nil
+# Disque
+disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
 
 # Pagination
 paginate: 10
@@ -54,130 +56,38 @@ paginate_path: 'page:num'
 
 # Navigation. If you do not like these modules, just remove them :D
 navs:
-
   -
     href: /
     label: Home
 
   -
-    href: /spring-boot.html
-    label: Spring-Boot
+    href: /open-source
+    label: Open-Source
 
   -
-    href: /spring-cloud.html
-    label: Spring-Cloud
+    href: /blog
+    label: Blog
 
   -
-    href: /archives.html
-    label: Archives
+    href: /bookmark
+    label: Bookmark
 
   -
-    href: /link.html
-    label: Link
-
-  -
-    href: /about.html
+    href: /about
     label: About
 
-
-# labels. my blog key words
-labels:
-
-  -
-    href: /share/2017/10/01/resource-sharing.html
-    name: 资源
-
-  -
-    href: /life.html
-    name: 故事
-
-  -
-    href: /arch.html
-    name: 架构
-    
-  -
-    href: /jvm.html
-    name: Jvm
-
-  -
-    href: /fastdfs.html
-    name: FastDFS
-
-  -
-    href: /mongodb.html
-    name: MongoDB
-
-  -
-    href: /docker.html
-    name: Docker
-
-  -
-    href: /open-source.html
-    name: Code   
-
-# selected articles
-classes:
-
-  -
-    href: /life.html
-    name: 我的故事
-    describe: 生活就是故事，故事就是生活
-
-  -
-    href: /arch.html
-    name: 架构师之路
-    describe: 一个架构师的自我修养
-
-  -
-    href: /jvm.html
-    name: Jvm系列文章
-    describe: Java之根基，Java程序员必学
-
-
-# ---------------- #
-#       RSS        #
-# ---------------- #
-subscribe_rss: /feed.xml
-
 # Sidebar to show popular repo
-side_bar_repo_limit: 6 # Number of repos to show
+side_bar_repo_limit: 5 # Number of repos to show
 
 # Google Analytics
-# analytics :
-# provider : google
-#   google :
-#     tracking_id : ''  # ex. UA-72165600-X
+analytics :
+  provider : google
+  google :
+      tracking_id : 'tracking_id'  # ex. UA-72165600-X
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
+skill_software_keywords: [Java, C, C++, Qt, Python, MySQL, Oracle, SQLite, PL/SQL, Design Patterns]
 skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
-skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
-skill_mobile_app_keywords: [vuejs, hyhird app]
-
-
-# ---------------- #
-#      Comments    #
-# ---------------- #
-# support provider: disqus, gitment, gitalk
-comments_provider: gitalk
-# !!!重要!!! 请修改下面这些信息为你自己申请的
-# !!!Important!!! Please modify infos below to yours
-# https://disqus.com
-disqus:
-    username: ityouknow
-# https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner: ityouknow
-    repo: blog-comments
-    oauth:
-        client_id: 61bfc53d957e74e78f8f
-        client_secret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
-# https://github.com/gitalk/gitalk#install
-gitalk:
-    owner: ityouknow
-    repo: blog-comments
-    clientID: 61bfc53d957e74e78f8f
-    clientSecret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
-# 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : true
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
+skill_mobile_app_keywords: [Android, Sketch UI Desgin]
